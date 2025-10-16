@@ -56,7 +56,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3rem;
   border: none;
   border-radius: 50%;
   background-color: transparent;
@@ -208,6 +207,12 @@
   display: block;
 }
 
+.btn-microphone:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.06);
+  transform: scale(1.1);
+}
+
 .main-content {
   display: flex;
 }
@@ -257,7 +262,7 @@
 .video-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 1.5rem;
   width: 100%;
   padding: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -266,19 +271,20 @@
 
 .video-grid div {
   background-color: #e0e0e0;
-
   border-radius: 0.5rem;
 }
 
 .btn-search .icon-search img {
   height: 1.4rem;
   width: 1.4rem;
+  display: block;
 }
 
 .img-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  width: 100%;
 }
 
 .tamano-music {
@@ -315,6 +321,7 @@
 
 .puntos {
   height: 20px;
+  cursor: pointer;
 }
 
 .foto-music {
@@ -333,19 +340,62 @@
   height: 18px;
 }
 
-titulo-cancion {
+.titulo-cancion {
   display: flex;
 }
 
 /* Tablets and above */
-@media only screen and (min-width: 768px) {
-  .sidebar {
-    display: block;
-    height: calc(100vh - 50px);
-    background-color: #f0f0f0;
-  }
+@media only screen and (min-width: 758px) {
   .input-search {
-    width: 30rem;
+    display: inline-flex;
+    width: 12rem;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+  }
+
+  .search-box-inner {
+    display: flex;
+    align-items: center;
+    border: 1px solid #636363;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+
+  .input-search {
+    border: none;
+    border-right: 1px solid #636363;
+    padding: 0.55rem 1rem;
+    font-size: 1rem;
+  }
+
+  .input-search:focus {
+    outline: none;
+    border-right: 1px solid rgb(4, 111, 251);
+  }
+
+  .btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0.4rem 1rem;
+  }
+
+  .btn-search:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .btn-search .icon-search img {
+    height: 1.2rem;
+    width: 1.2rem;
+    display: block;
   }
 
   .sidebar-content {
@@ -366,6 +416,9 @@ titulo-cancion {
     width: 250px;
   }
 
+  .input-search {
+    width: 40rem;
+  }
   .video-grid {
     grid-template-columns: repeat(3, 1fr);
   }
