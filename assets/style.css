@@ -351,6 +351,12 @@
     width: 12rem;
   }
 
+  .sidebar {
+    display: block;
+    height: calc(100vh - 50px);
+    background-color: #f0f0f0;
+  }
+
   .search-box {
     display: flex;
     align-items: center;
@@ -385,6 +391,13 @@
     background-color: transparent;
     border: none;
     padding: 0.4rem 1rem;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
   }
 
   .btn-search:hover {
