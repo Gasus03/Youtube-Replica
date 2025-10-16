@@ -17,7 +17,7 @@
 .search-box {
   display: flex;
   gap: 1rem;
-  margin: 0 auto; /* allow it to take remaining space and shrink */
+  margin-right: 5px; /* allow it to take remaining space and shrink */
   min-width: 0; /* allow children to shrink instead of overflowing */
 }
 
@@ -102,7 +102,7 @@
 .btn-crear {
   display: flex;
   font-size: 1rem;
-  padding: 0.25rem;
+  padding: 0.16rem;
   align-items: center;
   gap: 0.2rem;
   font-weight: 550;
@@ -134,12 +134,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 0.6rem;
+  gap: 0.25rem;
 }
 
 .header-right {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.15rem;
   align-items: center; /* push this group to the far right */
 }
 
@@ -197,7 +197,7 @@
   justify-content: center;
   align-items: center;
   border: none;
-  padding: 0.3rem;
+  padding: 0.2rem;
   border-radius: 50%;
   transition: background-color 0.15s ease, transform 0.08s ease;
 }
@@ -260,18 +260,81 @@
   gap: 0.5rem;
   width: 100%;
   padding: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .video-grid div {
   background-color: #e0e0e0;
-  width: 100%;
-  height: 150px;
+
   border-radius: 0.5rem;
 }
 
 .btn-search .icon-search img {
   height: 1.4rem;
   width: 1.4rem;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tamano-music {
+  width: 100%;
+  border-radius: 15px;
+  height: 277px;
+}
+
+.Icono-Music {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  align-items: start;
+}
+
+.titulo-cancion {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.autor-music {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: small;
+  color: #606060;
+}
+
+.Visualicer {
+  font-size: small;
+  color: #606060;
+}
+
+.puntos {
+  height: 20px;
+}
+
+.foto-music {
+  border-radius: 50%;
+  height: 30px;
+  height: 30px;
+}
+
+.puntos-final {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.aprobado {
+  height: 18px;
+}
+
+titulo-cancion {
+  display: flex;
 }
 
 /* Tablets and above */
